@@ -5,10 +5,8 @@ package com.coderscastle.kotlinbasics
 
 fun main (args : Array<String>){
 
-    val personObj = Person() //Object creation of Person class
-
-    println("Hy , this is ${personObj.name}") //Interpolation of String
-
+    val personObj = Person("Android") //Object creation of Person class
+    personObj.display()
 }
 
 
@@ -16,9 +14,3 @@ fun myDetails (){
     print("My name is Android")
 }
 
-
-
-class Person (){
-
-    val name : String = "Android"
-}
